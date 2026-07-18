@@ -2,7 +2,7 @@ import math
 
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
-        # Find the minimum and maximum values in the array
+        # Find the minimum and maximum values.
         min_val = min(nums)
         max_val = max(nums)
         
