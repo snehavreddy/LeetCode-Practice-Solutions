@@ -1,6 +1,5 @@
 class Solution:
     def findMissingElements(self, nums: List[int]) -> List[int]:
-        # Find the minimum and maximum values in the array
         min_val = min(nums)
         max_val = max(nums)
         
