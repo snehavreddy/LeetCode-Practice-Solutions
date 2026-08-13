@@ -17,19 +17,19 @@ class SegmentTree:
         res.lc = left.lc
         res.rc = right.rc
 
-        # Calculate Prefix
+        # Calculating Prefix
         if left.prefix == left_len and left.lc == right.lc:
             res.prefix = left.prefix + right.prefix
         else:
             res.prefix = left.prefix
 
-        # Calculate Suffix
+        # Calculating Suffix
         if right.suffix == right_len and right.rc == left.rc:
             res.suffix = right.suffix + left.suffix
         else:
             res.suffix = right.suffix
 
-        # Calculate Max
+        # Calculating Max
         cross = left.suffix + right.prefix if left.rc == right.lc else 0
         res.mx = max(left.mx, right.mx, cross)
 
