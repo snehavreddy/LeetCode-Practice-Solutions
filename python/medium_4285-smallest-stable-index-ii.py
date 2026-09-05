@@ -13,7 +13,6 @@ class Solution:
         for i in range(n):
             pref_max = max(pref_max, nums[i])
             
-            # Calculate instability score and check if it is <= k
             if pref_max - suff_min[i] <= k:
                 return i
                 
