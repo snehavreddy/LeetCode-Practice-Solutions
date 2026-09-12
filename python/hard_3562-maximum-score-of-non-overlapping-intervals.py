@@ -5,7 +5,7 @@ class Solution:
     def maximumWeight(self, intervals: List[List[int]]) -> List[int]:
         n = len(intervals)
         
-        # Sort original indices by the right endpoints of their intervals
+        # Sort original indices by the right endpoints of their intervals.
         order = sorted(range(n), key=lambda i: intervals[i][1])
         rights = [intervals[i][1] for i in order]
         
@@ -14,7 +14,7 @@ class Solution:
         # and inherently breaks ties with the lexicographically smaller list.
         prev = [(0, [])] * (n + 1)
         
-        # We can pick at most 4 intervals
+        # We can pick at most 4 intervals.
         for _ in range(4):
             cur = [(0, [])] * (n + 1)
             for p in range(1, n + 1):
