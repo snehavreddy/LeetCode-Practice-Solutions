@@ -31,7 +31,7 @@ class Solution:
                 vec = (r2 - r1, c2 - c1)
                 translation_counts[vec] += 1
                 
-                # Keep track of the maximum overlap found so far
+                # Keep track of the maximum overlap found so far.
                 if translation_counts[vec] > max_overlap:
                     max_overlap = translation_counts[vec]
                     
