@@ -11,7 +11,7 @@ class Solution:
         is_below = rec1[3] <= rec2[1]
         is_above = rec1[1] >= rec2[3]
         
-        # If any of these are true, they do not overlap
+        # If any of these are true, they do not overlap.
         if is_left or is_right or is_below or is_above:
             return False
             
