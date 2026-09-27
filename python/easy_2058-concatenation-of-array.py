@@ -1,8 +1,11 @@
 class Solution:
-    def getConcatenation(self, nums: List[int]) -> List[int]:
-        size = len(nums)
-        newArry = [0] * (size * 2)
-        for i in range(size):
-            newArry[i] = nums[i]
-            newArry[i + size] = nums[i]
-        return newArry
+    def getConcatenation(self, nums: list[int]) -> list[int]:
+        # size = len(nums)
+        # ans = [None] * 2 * size
+
+        # for idx, num in enumerate(nums):
+        #     ans[idx] = ans[idx + size] = num
+
+        # return list(ans)
+        # return nums * 2
+        return nums + nums
