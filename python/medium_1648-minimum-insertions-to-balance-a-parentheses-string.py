@@ -15,7 +15,7 @@ class Solution:
                 # Every new '(' requires two '))'
                 req_right += 2
             else:
-                # We encounter a ')'
+                # We encounter a ')'.
                 req_right -= 1
                 
                 # If required right parentheses drops below 0, it means we have a ')' 
@@ -26,5 +26,5 @@ class Solution:
                     # We just used one ')' to trigger this, so we still need 1 more ')'.
                     req_right += 2
                     
-        # Add any unmatched required right parentheses to the total insertions
+        # Add any unmatched required right parentheses to the total insertions.
         return insertions + req_right
